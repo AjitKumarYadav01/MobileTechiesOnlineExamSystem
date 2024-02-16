@@ -1,0 +1,79 @@
+<div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+      Exams Type
+    </button>
+    <div class="row">
+      <div class="col-12">
+        <button class="btn btn-success" (click)="openModel()">Open Modal</button>
+      </div>
+    </div>
+    <table class="dropdown-content" id="examTypeDropdown">
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" [routerLink]="['/examType']">Software Developer</a></li>
+            <li><a class="dropdown-item" [routerLink]="['/examType']">Software Tester</a></li>
+            <li><a class="dropdown-item" [routerLink]="['/examType']">DataBase Engineer</a></li>
+            <li><a class="dropdown-item" [routerLink]="['/examType']">HR</a></li>
+            <li><a class="dropdown-item" [routerLink]="['/examType']">Manager</a></li>            
+            <li><a class="dropdown-item" [routerLink]="['/examType']">Data Analyst</a></li>            
+
+          </ul>
+    </table>
+  </div>
+
+  <!-- Modal for Data Analyst -->
+<!-- <div class="modal fade" id="dataAnalystModal" tabindex="-1" role="dialog" aria-labelledby="dataAnalystModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="dataAnalystModalLabel">Data Analyst Popup</h5>
+        <button type="button" class="close" (click)="closeModel()" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body"> -->
+        <!-- Add your content for the popup here -->
+        <!--
+        <p>This is the popup content for Data Analyst.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" (click)="closeModel()" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<!-- popup model -->
+
+<div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Modal 1</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Show a second modal and hide this one with the button below.
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Open second modal</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Modal 2</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Hide this modal and show the first with the button below.
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to first</button>
+      </div>
+    </div>
+  </div>
+</div>
+<a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Open first modal</a>

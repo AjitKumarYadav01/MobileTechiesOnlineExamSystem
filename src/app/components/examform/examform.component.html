@@ -1,0 +1,45 @@
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6 examform">
+        <form [formGroup]="AddPaperForm" (ngSubmit)="onSubmit()">
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">General Instructions</label>
+                <textarea class="form-control inputtext" id="GeneralInstructionTextArea" rows="3" placeholder="Provide an General Instruction for the paper"></textarea>
+              </div>
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Question</label>
+            <input type="text" class="form-control inputtext" id="exampleFormControlInput1" placeholder="Enter your question here">
+          </div>
+          <div class="form-group">
+            <label for="optionA">Option A</label>
+            <input type="text" class="form-control inputtext" id="optionA" placeholder="Text option A">
+          </div>
+          <div class="form-group">
+            <label for="optionB">Option B</label>
+            <input type="text" class="form-control inputtext" id="optionB" placeholder="Text option B">
+          </div>
+          <div class="form-group">
+            <label for="optionC">Option C</label>
+            <input type="text" class="form-control inputtext" id="optionC" placeholder="Text option C">
+          </div>
+          <div class="form-group">
+            <label for="optionD">Option D</label>
+            <input type="text" class="form-control inputtext" id="optionD" placeholder="Text option D">
+          </div>
+
+          <div class="form-group">
+            <label for="optionD">Correct Answer</label>
+            <input type="text" class="form-control inputtext" id="correctAns" placeholder="Correct Ans Text">
+          </div>
+
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Explanation</label>
+            <textarea class="form-control inputtext" id="exampleFormControlTextarea1" rows="3" placeholder="Provide an explanation for the correct answer"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" (click)="onSubmit()">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  

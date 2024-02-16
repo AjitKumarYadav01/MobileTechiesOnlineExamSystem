@@ -1,0 +1,151 @@
+<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Quant Section</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Technical Section</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Communication</button>
+    </li>
+  </ul>
+  <div class="tab-content" id="pills-tabContent">
+    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">...</div>
+    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
+    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+  </div>
+
+
+  <div class="row mt-4">
+    <div class="col-md-6">
+      <!-- Add Questions Section -->
+      <div>
+        <h2>Add Questions</h2>
+        <!-- Add your form or content for adding questions here -->
+      </div>
+    </div>
+    
+
+    <div class="col-md-6">
+        <!-- Calendar Section -->
+        <div>
+          <h2>Calendar</h2>
+      
+          <!-- Time Duration Button -->
+          <button class="btn btn-warning mb-3" id="durationButton">Set Time Duration</button>
+      
+          <!-- <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              
+               <div *ngFor="let user of question; let i = index" >
+                <span class="question">{{i+1}} </span>
+               </div>
+
+            </div>
+          </div> -->
+
+          <div class="keypad" >
+
+            <!-- <div *ngFor="let user of question; let i = index" >
+                <span class="question">{{i+1}} </span>
+            </div> -->
+
+            <div class="keys ackey one-line" >
+
+                <button type="button" class="btn btn-info">1</button>
+            </div>
+            <div class="keys ackey one-line" >
+                <button type="button" class="btn btn-info">2</button>
+            </div>
+            <div class="keys ackey one-line" >
+                <button type="button" class="btn btn-info">3</button>
+            </div>
+            <div class="keys ackey one-line" >
+                <button type="button" class="btn btn-info">4</button>
+            </div>
+            <div class="keys ackey one-line" >
+                <button type="button" class="btn btn-info">5</button>
+            </div>
+            <div class="keys ackey one-line" >
+                <button type="button" class="btn btn-info">6</button>
+            </div>
+            <div class="keys ackey one-line" >
+                <button type="button" class="btn btn-info">7</button>
+            </div>
+            <div class="keys ackey one-line" >
+                <button type="button" class="btn btn-info">8</button>
+            </div>
+            <div class="keys ackey one-line" >
+                <button type="button" class="btn btn-info">9</button>
+            </div>
+            <div class="keys ackey one-line" >
+                <button type="button" class="btn btn-info">10</button>
+            </div>
+            <div class="keys ackey one-line" >
+                <button type="button" class="btn btn-info">11</button>
+            </div>
+            <div class="keys ackey one-line" >
+                <button type="button" class="btn btn-info">12</button>
+            </div>
+            <div class="keys ackey one-line" >
+                <button type="button" class="btn btn-info">13</button>
+            </div>
+            <div class="keys ackey one-line" >
+                <button type="button" class="btn btn-info">14</button>
+            </div>
+            <div class="keys ackey one-line" >
+                <button type="button" class="btn btn-info">15</button>
+            </div>
+            <div class="keys ackey one-line" >
+                <button type="button" class="btn btn-info">16</button>
+            </div>
+            <div class="keys ackey one-line" >
+                <button type="button" class="btn btn-info">17</button>
+            </div>
+            <div class="keys ackey one-line" >
+                <button type="button" class="btn btn-info">18</button>
+            </div>
+            <div class="keys ackey one-line" >
+                <button type="button" class="btn btn-info">19</button>
+            </div>
+            <div class="keys ackey one-line" >
+                <button type="button" class="btn btn-info">20</button>
+            </div>
+
+         </div>
+
+
+          <!-- Table List with 60 Buttons
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Time Slot</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let i of timeSlotsArray; let index = index">
+                <th scope="row">{{ index + 1 }}</th>
+                <td>
+                  <button class="btn btn-outline-secondary time-slot-button">{{ index + 1 }}</button>
+                </td>
+              </tr>
+            </tbody>
+          </table> -->
+
+
+        </div>
+      </div>
+      
+
+      <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+        <button class="btn btn-primary me-md-2" type="button" [routerLink]="['/exam-instruct']">Back </button>
+        <button class="btn btn-primary" type="button">Next</button>
+      </div>
+
+       <form (ngSubmit)="onSubmit()">
+        <button type="button" class="btn btn-primary btn-lg">Save & Next</button>
+       </form> 
+    
+
+  </div>
